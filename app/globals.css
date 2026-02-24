@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+:root {
+  --offWhite: #fffcf8;
+  --darkBlue: #000927;
+  --lightGreen: #bdffd1;
+  --lightPurple: #dadbff;
+  --lightPink: #ffe0e0;
+  background-color: var(--offWhite);
+  font-family: "Bricolage Grotesque", sans-serif;
+  scroll-behavior: smooth;
+}
