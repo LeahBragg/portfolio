@@ -50,7 +50,7 @@ export default function App() {
           <img src={"Dots.svg"} className='absolute w-220 max-w-2/3 rotate-105 z-0 -top-20 -left-20 md:-left-60' />
         </div>
 
-        <div className='relative z-12 text-center mt-40'>
+        <div className='relative z-12 text-center mt-52'>
           <h1 className="text-4xl font-bold">Fun & Games</h1>
           <hr className='w-sm max-w-1/2 border-1 border-(--darkBlue) justify-self-center mt-4' />
         </div>

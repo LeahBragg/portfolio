@@ -4,7 +4,7 @@ import { IoMdDownload } from "react-icons/io";
 export default function Contact() {
 
     return (
-        <div className="relative z-10 justify-center overflow-b-clip">
+        <div className="relative z-10 justify-center">
             <div className='relative z-12 text-center'>
                 <h1 className="text-5xl md:text-6x1 font-bold mt-24">Get in touch!</h1>
                 <hr className='w-sm max-w-1/2 border-2 border-(--darkBlue) justify-self-center mt-4' />
