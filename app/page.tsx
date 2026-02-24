@@ -41,7 +41,7 @@ export default function App() {
             <img src={"Mouth.svg"} className='relative z-0 md:max-w-1/2 w-4xl justify-self-right' />
           </div>
         </div>
-        <img src={"Clothes.svg"} className='absolute z-0 top-640 md:top-480 justify-self-center' />
+        <img src={"Clothes.svg"} className='absolute z-0 top-612 sm:top-660 md:top-480 justify-self-center' />
 
         <div className="overflow-hidden">
           <img src={"GreenShape.svg"} className='absolute max-w-1/3 z-1 top-0 right-0' />
