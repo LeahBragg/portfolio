@@ -7,7 +7,7 @@ export default function Escape() {
             <div className="relative mt-8 md:mt-8 z-10">
                 <div className="relative mx-auto text-center text-(--darkBlue) z-11">
                     <h1 className="text-3xl font-bold">Escape the Maze Game</h1 >
-                    <p className="text-1">Multi-level Scratch maze gane</p>
+                    <p className="text-1">Multi-level Scratch maze game</p>
                 </div>
 
                 <div className="relative flex mx-10 flex-col z-10 justify-center items-center">

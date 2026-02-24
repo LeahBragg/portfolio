@@ -8,5 +8,9 @@
   --lightPink: #ffe0e0;
   background-color: var(--offWhite);
   font-family: "Bricolage Grotesque", sans-serif;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth
+}
+
+html {
+  padding-right: 0px !important;
 }

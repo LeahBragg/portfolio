@@ -87,10 +87,11 @@ export default function Navbar() {
                 </PopoverGroup>
             </nav>
             <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
-                <div className="fixed right-0 z-101" />
+                <div className="fixed right-0" />
 
-                <DialogPanel transition className="fixed outline-4 outline-(--darkBlue) inset-y-0 right-0 z-50 w-full overflow-y-auto bg-(--lightPink) p-6 sm:max-w-sm sm:ring-1 z-101
-                    transition data-closed:translate-x-2 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in">
+                <DialogPanel transition className="fixed outline-4 outline-(--darkBlue) inset-y-0 right-0 w-sm bg-(--lightPink) p-6 z-101
+                    transition data-closed:translate-x-2 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in
+                    ">
                     <div className="flex items-center justify-end">
                         <button
                             type="button"
