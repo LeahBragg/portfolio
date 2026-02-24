@@ -1,150 +1,74 @@
 'use client'
+import AsIf from './components/asIf'
+import Civickit from './components/civickit'
+import Contact from './components/contact'
+import Escape from './components/escape'
+import Home from './components/home'
+import Navbar from './components/navbar'
+import Pixel from './components/pixel'
+import Saltify from './components/saltify'
+import Wordle from './components/wordle'
 
-import { useState } from 'react'
-import {
-  Dialog,
-  DialogPanel,
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-  Popover,
-  PopoverButton,
-  PopoverGroup,
-  PopoverPanel,
-} from '@headlessui/react'
-import {
-  ArrowPathIcon,
-  Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
-  XMarkIcon,
-} from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
-
-const projects = [
-  { name: 'Civickit', description: '', href: '#', icon: ChartPieIcon },
-  { name: 'Saltify', description: '', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'As-If!', description: '', href: '#', icon: FingerPrintIcon },
-  { name: 'Pixel Art Maker', description: '', href: '#', icon: SquaresPlusIcon },
-  { name: 'Wordle Clone', description: '', href: '#', icon: ArrowPathIcon },
-  { name: 'Escape the Maze Game', description: '', href: '#' },
-]
-
-export default function Example() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+export default function App() {
 
   return (
-    <header className="bg-white">
-      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
-        <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
-            <img
-              alt=""
-              src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-              className="h-8 w-auto"
-            />
-          </a>
-        </div>
-        <div className="flex lg:hidden">
-          <button
-            type="button"
-            onClick={() => setMobileMenuOpen(true)}
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-          >
-            <span className="sr-only">Open main menu</span>
-            <Bars3Icon aria-hidden="true" className="size-6" />
-          </button>
+    <>
+      <Navbar />
+      <div className='relative'>
+        <>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet" />
+        </>
+
+        <div id="Home"><Home /></div>
+
+        <div id="Projects" className='relative z-12 text-center mt-40 py-16'>
+          <h1 className="text-6xl font-bold mt-24">Projects</h1>
+          <hr className='w-sm max-w-1/2 border-2 border-(--darkBlue) justify-self-center mt-4' />
         </div>
 
-        <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
-            Contact
-          </a>
-          <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900">
-              Projects
-              <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-gray-400" />
-            </PopoverButton>
+        <div className='flex flex-col md:flex-row justify-center'>
+          <div id="Civickit"><Civickit /></div>
+          <div id="Saltify"><Saltify /></div>
+        </div>
 
-            <PopoverPanel
-              transition
-              className="absolute left-1/2 z-10 mt-3 w-screen max-w-md -translate-x-1/2 overflow-hidden rounded-3xl bg-white shadow-lg outline-1 outline-gray-900/5 transition data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
-            >
-              <div className="p-4">
-                {projects.map((item) => (
-                  <div
-                    key={item.name}
-                    className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
-                    <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                    </div>
-                    <div className="flex-auto">
-                      <a href={item.href} className="block font-semibold text-gray-900">
-                        {item.name}
-                        <span className="absolute inset-0" />
-                      </a>
-                      <p className="mt-1 text-gray-600">{item.description}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
+        <div id="AsIf"><AsIf /></div>
 
-            </PopoverPanel>
-          </Popover>
-        </PopoverGroup>
-      </nav>
-      <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
-        <div className="fixed inset-0 z-50" />
-
-        <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-          <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only"></span>
-              <img
-                alt=""
-                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-                className="h-8 w-auto"
-              />
-            </a>
-            <button
-              type="button"
-              onClick={() => setMobileMenuOpen(false)}
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
-            >
-              <span className="sr-only">Close menu</span>
-              <XMarkIcon aria-hidden="true" className="size-6" />
-            </button>
+        <div className='absolute w-full top-280'>
+          <div className='flex flex-col md:flex-row md:justify-between -translate-y-44 md:-translate-y-0 '>
+            <img src={"MapCutoff.svg"} className='relative z-0 max-w-5/6 md:max-w-1/2 w-2xl' />
+            <img src={"Mouth.svg"} className='relative z-0 md:max-w-1/2 w-4xl justify-self-right' />
           </div>
-          <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="space-y-2 py-6">
-                <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
-                    Projects
-                    <ChevronDownIcon aria-hidden="true" className="size-5 flex-none group-data-open:rotate-180" />
-                  </DisclosureButton>
-                  <DisclosurePanel className="mt-2 space-y-2">
-                    {[...projects].map((item) => (
-                      <DisclosureButton
-                        key={item.name}
-                        as="a"
-                        href={item.href}
-                        className="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                      >
-                        {item.name}
-                      </DisclosureButton>
-                    ))}
-                  </DisclosurePanel>
-                </Disclosure>
-              </div>
-              <div className="py-6">
-              </div>
-            </div>
-          </div>
-        </DialogPanel>
-      </Dialog>
-    </header>
+        </div>
+        <img src={"Clothes.svg"} className='absolute z-0 top-640 md:top-480 justify-self-center' />
+
+        <div className="overflow-hidden">
+          <img src={"GreenShape.svg"} className='absolute max-w-1/3 z-1 top-0 right-0' />
+          <img src={"PurpleShape.svg"} className='absolute max-w-1/3 z-1 top-100 sm:top-130 left-0' />
+          <img src={"Dots2.svg"} className='absolute w-220 max-w-2/3 z-0 top-120 right-0' />
+          <img src={"Dots.svg"} className='absolute w-220 max-w-2/3 rotate-105 z-0 -top-20 -left-20 md:-left-60' />
+        </div>
+
+        <div className='relative z-12 text-center mt-40'>
+          <h1 className="text-4xl font-bold">Fun & Games</h1>
+          <hr className='w-sm max-w-1/2 border-1 border-(--darkBlue) justify-self-center mt-4' />
+        </div>
+
+        <div className='relative flex flex-wrap flex-row justify-center'>
+          <div id="Wordle"><Wordle /></div>
+          <div id="Pixel"><Pixel /></div>
+          <div id="Escape"><Escape /></div>
+        </div>
+
+        <div id="Contact"><Contact /></div>
+
+        <img src={"GreenShape.svg"} className='absolute z-1 -bottom-12 max-w-1/4 rotate-180 left-0 w-60' />
+        <img src={"PurpleShape.svg"} className='absolute z-1 bottom-36 max-w-1/4 right-0 rotate-180 w-60' />
+        <img src={"Dots1.svg"} className='absolute w-200  z-0 -bottom-12 right-0' />
+        <img src={"Dots.svg"} className='absolute w-200 rotate-45 z-0 bottom-80 -left-80 md:-left-160' />
+
+      </div>
+    </>
   )
 }
