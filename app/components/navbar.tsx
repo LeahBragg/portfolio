@@ -108,6 +108,7 @@ export default function Navbar() {
                                     <a
                                         key={item.name}
                                         href={item.href}
+                                        onClick={() => setMobileMenuOpen(false)}
                                         className="block rounded-xl py-2 pr-3 pl-6 text-lg font-semibold text-(--darkBlue) hover:outline-(--darkBlue) hover:outline-3 hover:bg-(--offWhite)"
                                     >
                                         {item.name}
