@@ -8,5 +8,5 @@
   --lightPink: #ffe0e0;
   background-color: var(--offWhite);
   font-family: "Bricolage Grotesque", sans-serif;
-  overflow: scroll;
+  scroll-behavior: smooth;
 }
