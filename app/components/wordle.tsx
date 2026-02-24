@@ -1,5 +1,5 @@
 'use client'
-
+const url = "/leahbragg/"
 export default function Wordle() {
 
     return (
@@ -12,7 +12,7 @@ export default function Wordle() {
 
                 <div className="relative flex mx-10 flex-col z-10 justify-center items-center">
 
-                    <img src={"Wordle.svg"} className='w-sm m-4' />
+                    <img src={url + "Wordle.svg"} className='w-sm m-4' />
 
 
 

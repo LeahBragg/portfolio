@@ -9,6 +9,7 @@ import Pixel from './components/pixel'
 import Saltify from './components/saltify'
 import Wordle from './components/wordle'
 
+const url = "/leahbragg/"
 export default function App() {
 
   return (
@@ -37,17 +38,17 @@ export default function App() {
 
         <div className='absolute w-full top-280'>
           <div className='flex flex-col md:flex-row md:justify-between -translate-y-44 md:-translate-y-0 '>
-            <img src={"MapCutoff.svg"} className='relative z-0 max-w-5/6 md:max-w-1/2 w-2xl' />
-            <img src={"Mouth.svg"} className='relative z-0 md:max-w-1/2 w-4xl justify-self-right' />
+            <img src={url + "MapCutoff.svg"} className='relative z-0 max-w-5/6 md:max-w-1/2 w-2xl' />
+            <img src={url + "Mouth.svg"} className='relative z-0 md:max-w-1/2 w-4xl justify-self-right' />
           </div>
         </div>
-        <img src={"Clothes.svg"} className='absolute z-0 top-640 md:top-480 justify-self-center' />
+        <img src={url + "Clothes.svg"} className='absolute z-0 top-640 md:top-480 justify-self-center' />
 
         <div className="overflow-hidden">
-          <img src={"GreenShape.svg"} className='absolute max-w-1/3 z-1 top-0 right-0' />
-          <img src={"PurpleShape.svg"} className='absolute max-w-1/3 z-1 top-100 sm:top-130 left-0' />
-          <img src={"Dots2.svg"} className='absolute w-220 max-w-2/3 z-0 top-120 right-0' />
-          <img src={"Dots.svg"} className='absolute w-220 max-w-2/3 rotate-105 z-0 -top-20 -left-20 md:-left-60' />
+          <img src={url + "GreenShape.svg"} className='absolute max-w-1/3 z-1 top-0 right-0' />
+          <img src={url + "PurpleShape.svg"} className='absolute max-w-1/3 z-1 top-100 sm:top-130 left-0' />
+          <img src={url + "Dots2.svg"} className='absolute w-220 max-w-2/3 z-0 top-120 right-0' />
+          <img src={url + "Dots.svg"} className='absolute w-220 max-w-2/3 rotate-105 z-0 -top-20 -left-20 md:-left-60' />
         </div>
 
         <div className='relative z-12 text-center mt-40'>
@@ -63,10 +64,10 @@ export default function App() {
 
         <div id="Contact"><Contact /></div>
 
-        <img src={"GreenShape.svg"} className='absolute z-1 -bottom-12 max-w-1/4 rotate-180 left-0 w-60' />
-        <img src={"PurpleShape.svg"} className='absolute z-1 bottom-36 max-w-1/4 right-0 rotate-180 w-60' />
-        <img src={"Dots1.svg"} className='absolute w-200  z-0 -bottom-12 right-0' />
-        <img src={"Dots.svg"} className='absolute w-200 rotate-45 z-0 bottom-80 -left-80 md:-left-160' />
+        <img src={url + "GreenShape.svg"} className='absolute z-1 -bottom-12 max-w-1/4 rotate-180 left-0 w-60' />
+        <img src={url + "PurpleShape.svg"} className='absolute z-1 bottom-36 max-w-1/4 right-0 rotate-180 w-60' />
+        <img src={url + "Dots1.svg"} className='absolute w-200  z-0 -bottom-12 right-0' />
+        <img src={url + "Dots.svg"} className='absolute w-200 rotate-45 z-0 bottom-80 -left-80 md:-left-160' />
 
       </div>
     </>
