@@ -12,7 +12,7 @@ export default function Civickit() {
                 </div>
 
                 <div className="relative mx-4 flex flex-col-reverse z-10 justify-center items-center">
-                    <div className="justify-self-right my-4">
+                    <div className="justify-self-right text-center my-4">
                         <a target="_blank" href="https://github.com/oss-slu/civickit" className="font-semibold text-(--darkBlue) outline-(--darkBlue) outline-4 rounded-xl bg-(--offWhite) p-4 hover:text-(--lightPink) hover:bg-(--darkBlue)">
                             View on Github
                         </a>

@@ -55,7 +55,7 @@ export default function App() {
           <hr className='w-sm max-w-1/2 border-1 border-(--darkBlue) justify-self-center mt-4' />
         </div>
 
-        <div className='relative flex flex-wrap flex-row justify-center'>
+        <div className='relative flex flex-wrap flex-row justify-center gap-y-8'>
           <div id="Wordle"><Wordle /></div>
           <div id="Pixel"><Pixel /></div>
           <div id="Escape"><Escape /></div>

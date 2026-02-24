@@ -22,10 +22,10 @@ export default function Saltify() {
 
 
                     <div className="flex flex-col md:flex-row gap-4 md:gap-8 justify-self-right">
-                        <a target="_blank" href="https://github.com/oss-slu/SpeechTranscription" className="font-semibold text-(--darkBlue) outline-(--darkBlue) outline-4 rounded-xl bg-(--offWhite) p-4 hover:text-(--lightGreen) hover:bg-(--darkBlue)">
+                        <a target="_blank" href="https://github.com/oss-slu/SpeechTranscription" className="font-semibold text-center text-(--darkBlue) outline-(--darkBlue) outline-4 rounded-xl bg-(--offWhite) p-4 hover:text-(--lightGreen) hover:bg-(--darkBlue)">
                             View on Github
                         </a>
-                        <a target="_blank" href="https://oss-slu.github.io/projects/saltify/about" className="font-semibold text-(--darkBlue) outline-(--darkBlue) outline-4 rounded-xl bg-(--offWhite) p-4 hover:text-(--lightGreen) hover:bg-(--darkBlue)">
+                        <a target="_blank" href="https://oss-slu.github.io/projects/saltify/about" className="font-semibold text-center text-(--darkBlue) outline-(--darkBlue) outline-4 rounded-xl bg-(--offWhite) p-4 hover:text-(--lightGreen) hover:bg-(--darkBlue)">
                             View on OSS
                         </a>
                     </div>

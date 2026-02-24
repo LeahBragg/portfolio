@@ -16,7 +16,7 @@ export default function Wordle() {
 
 
 
-                    <div className="flex flex-col md:flex-row gap-4 md:gap-8 justify-self-right">
+                    <div className="flex flex-col md:flex-row gap-4 md:gap-8 justify-self-right text-center">
                         <a target="_blank" href="https://github.com/LeahBragg/wordleClone/" className="font-semibold text-(--darkBlue) outline-(--darkBlue) outline-3 rounded-xl bg-(--offWhite) p-4 hover:text-(--lightPurple) hover:bg-(--darkBlue)">
                             View on Github
                         </a>

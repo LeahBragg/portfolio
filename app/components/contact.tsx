@@ -6,11 +6,11 @@ export default function Contact() {
     return (
         <div className="relative z-10 justify-center overflow-b-clip">
             <div className='relative z-12 text-center'>
-                <h1 className="text-6xl font-bold mt-24">Get in touch!</h1>
+                <h1 className="text-5xl md:text-6x1 font-bold mt-24">Get in touch!</h1>
                 <hr className='w-sm max-w-1/2 border-2 border-(--darkBlue) justify-self-center mt-4' />
             </div>
 
-            <div className="relative flex flex-col justify-self-center w-xl gap-4 mt-4 pb-12 mx-12 z-10">
+            <div className="relative flex flex-col justify-self-center max-w-xl w-screen gap-4 mt-4 pb-12 px-12 text-center mx-12 z-10">
                 <div className="flex flex-col gap-2 md:flex-row flex-wrap justify-between items-center">
                     <p className="text-2xl font-semibold">Email Me</p>
                     <a target="_blank" href="mailto:Leah.K.Bragg@gmail.com"
